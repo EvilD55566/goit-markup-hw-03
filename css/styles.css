@@ -5,7 +5,7 @@
   --accent-color: #2196f3;
   --main-title-color: #212121;
   --primary-text-color: #757575;
-  --primary-margin:30px;
+  --primary-margin: 30px;
 }
 body {
   color: var(--primary-text-color);
@@ -33,6 +33,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -80,7 +82,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  
 }
 
 .logo-dark {
@@ -174,13 +175,16 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+.peculiarities {
+  padding-top: 94px;
+}
 .peculiarities-list {
   display: flex;
-  margin-left:calc(-1 * var(--primary-margin));
+  margin-left: calc(-1 * var(--primary-margin));
   flex-wrap: wrap;
 }
 .peculiarities-item {
-  margin-left:var(--primary-margin);
+  margin-left: var(--primary-margin);
   flex-basis: calc(100% / 4 - 30px);
 }
 .peculiarities-title {
@@ -226,7 +230,7 @@ img {
 }
 .team-list {
   display: flex;
-  margin-left:calc(-1 * var(--primary-margin));
+  margin-left: calc(-1 * var(--primary-margin));
   flex-wrap: wrap;
 }
 .team-item {
@@ -252,12 +256,11 @@ img {
 }
 .team-thumb {
   background: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-top: var(--primary-margin);
-  padding-bottom: var(--primary-margin)
+  padding-bottom: var(--primary-margin);
 }
 /*--------------------------------------------------------footer--------------------------------------------*/
 
@@ -285,8 +288,8 @@ a.adress-link {
 }
 .adress-link,
 .adress-mail-link {
-display: inline-block;
- margin-bottom: 9px;
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .adress-mail-link:hover,
@@ -335,7 +338,7 @@ display: inline-block;
 .port-item {
   margin-left: var(--primary-margin);
   margin-bottom: var(--primary-margin);
-  flex-basis:calc(100%/3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .port-title {
@@ -344,9 +347,8 @@ display: inline-block;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
-.port-second-title {
+.port-text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
